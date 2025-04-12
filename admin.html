@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Send Message</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="passwordPrompt">
+        <h1>Admin Login</h1>
+        <input type="password" id="passwordInput" placeholder="Enter password">
+        <button onclick="checkPassword()">Login</button>
+        <p id="passwordError" class="error"></p>
+    </div>
+    <div class="container hidden" id="adminContent">
+        <h1>Admin: Send Message</h1>
+        <a href="index.html" class="back-link">Back to Home</a>
+        <textarea id="messageInput" placeholder="Type your message here..."></textarea>
+        <button onclick="sendMessage()">Send</button>
+        <p id="status"></p>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
