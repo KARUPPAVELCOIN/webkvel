@@ -32,7 +32,7 @@ async function sendMessage() {
     };
 
     try {
-        const response = await fetch('https://github.com/KARUPPAVELCOIN/webkvel/', {
+        const response = await fetch('https://github.com/KARUPPAVELCOIN/webkvel/messages', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newMessage)
