@@ -2,7 +2,7 @@ async function loadMessages() {
     const messageList = document.getElementById('messageList');
 
     try {
-        const response = await fetch('https://github.com/KARUPPAVELCOIN/webkvel/messages');
+        const response = await fetch('http://localhost:3000/webkvel');
         if (!response.ok) {
             messageList.innerHTML = '<p>Error loading messages</p>';
             return;
